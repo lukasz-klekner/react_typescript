@@ -5,7 +5,7 @@ function App() {
   return (
     <div className='App'>
       React - TypeScript
-      <Greet name='Łukasz' />
+      <Greet name='Łukasz' countMessages={100} isLogged />
     </div>
   )
 }

@@ -1,9 +1,15 @@
 type GreetProps = {
   name: string
+  countMessages: number
+  isLogged: boolean
 }
 
-export const Greet = ({ name }: GreetProps) => (
+export const Greet = ({ name, countMessages, isLogged }: GreetProps) => (
   <div>
-    <h2>Welcome {name}!!! How are you today?</h2>
+    {isLogged ? (
+      <h2>
+        Welcome {name}!!! How are you today? You have {countMessages} to read!
+      </h2>
+    ) : null}
   </div>
 )
