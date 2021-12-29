@@ -1,16 +1,13 @@
 import './App.css'
-import { Status } from './components/Status'
-import { Heading } from './components/Heading'
-import { Oscar } from './components/Oscar'
+import { Button } from './components/Button'
 
 function App() {
   return (
     <div className='App'>
       React - TypeScript
-      <Status status='loading' />
-      <Oscar>
-        <Heading>Oscar goes to Leonardo DiCaprio</Heading>
-      </Oscar>
+      <Button
+        handleClick={(event, id) => console.log('Clicked me!', event, id)}
+      />
     </div>
   )
 }
