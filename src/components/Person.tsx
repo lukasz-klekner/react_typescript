@@ -1,8 +1,10 @@
-type PersonProps = {
-  name: {
-    first: string
-    last: string
-  }
+export type Name = {
+  first: string
+  last: string
+}
+
+export type PersonProps = {
+  name: Name
 }
 
 export const Person = ({ name }: PersonProps) => (
