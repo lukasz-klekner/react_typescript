@@ -1,11 +1,11 @@
 import './App.css'
-import { MutableRef } from './components/ref/MutableRef'
+import { Counter } from './components/class/Counter'
 
 function App() {
   return (
     <div className='App'>
       React - TypeScript
-      <MutableRef />
+      <Counter message='Welcome back 2022' />
     </div>
   )
 }
