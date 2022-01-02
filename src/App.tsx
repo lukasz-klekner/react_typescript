@@ -1,11 +1,13 @@
 import './App.css'
-import { Toast } from './components/template_literals/Toast'
+import { CustomButton } from './components/html/Button'
 
 function App() {
   return (
     <div className='App'>
       React - TypeScript
-      <Toast position='left-center' />
+      <CustomButton variant='primary' onClick={() => console.log('Clicked!')}>
+        Primary Button
+      </CustomButton>
     </div>
   )
 }
