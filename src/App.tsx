@@ -1,15 +1,11 @@
 import './App.css'
-import { List } from './components/generics/List'
+import { RandomNumber } from './components/restriction/RandomNumber'
 
 function App() {
   return (
     <div className='App'>
       React - TypeScript
-      <List
-        items={['Batman', 'Superman']}
-        onClick={(item) => console.log(item)}
-      />
-      <List items={[1, 2]} onClick={(item) => console.log(item)} />
+      <RandomNumber value={10} isNegative />
     </div>
   )
 }
