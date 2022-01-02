@@ -1,11 +1,16 @@
 import './App.css'
-import { CustomComponent } from './components/html/CustomComponent'
+import { Text } from './components/polymorphic/Test'
 
 function App() {
   return (
     <div className='App'>
       React - TypeScript
-      <CustomComponent name='Lukasz' countMessages={3} isLogged />
+      <Text as='h1'>Siemka</Text>
+      <Text as='h4'>Siemka</Text>
+      <Text as='p'>Siemka</Text>
+      <Text as='label' htmlFor='dziala'>
+        Siemka
+      </Text>
     </div>
   )
 }
