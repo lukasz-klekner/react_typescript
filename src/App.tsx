@@ -1,11 +1,11 @@
 import './App.css'
-import { RandomNumber } from './components/restriction/RandomNumber'
+import { Toast } from './components/template_literals/Toast'
 
 function App() {
   return (
     <div className='App'>
       React - TypeScript
-      <RandomNumber value={10} isNegative />
+      <Toast position='left-center' />
     </div>
   )
 }
